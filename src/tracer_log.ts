@@ -257,8 +257,7 @@ export default class TracerLog implements TracerLogInterface {
             let url: string = URL.createObjectURL(blob);
             let a: HTMLAnchorElement = document.createElement("a");
             a.href = url;
-            let name: string = `log_${((new Date).getTime())}.json)}`;
-            a.download = "log_" + name + ".json";
+            a.download = `log_${((new Date).getTime())}.json`;
             a.click();
         }
     }
